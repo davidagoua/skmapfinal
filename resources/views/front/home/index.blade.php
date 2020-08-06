@@ -4,7 +4,7 @@
 @section('body')
     <!-- ##### Hero Area Start ##### -->
     <section class="hero-area">
-        <div class="hero-slides owl-carousel">
+        <div class="hero-slides owl-carousel justify-content-center">
 
             <!-- Single Hero Slide -->
             <div class="single-hero-slide bg-img" style="background-image: url({{ asset('img/bg-img/bg-1.jpg') }});">
@@ -74,7 +74,7 @@
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <i class="icon-assistance"></i>
-                                    <h5>Relations<br><small class="font-weight-light">Paratage de culture.</small></h5>
+                                    <h5>Relations<br><small class="font-weight-light">Partage de culture.</small></h5>
 
                                 </div>
                             </div>
