@@ -32,11 +32,7 @@
                     <div class="row">
                         @each('front.debouche.item', $debouches, 'deb')
                     </div>
-                    @if($debouches->count() > 1)
-                        <div class="text-right">
-                            <a href="{{ route('debouche.index') }}?categorie={{$categorie->id}}" class="btn academy-btn">Voir plus >></a>
-                        </div>
-                    @else
+                    @if($debouches->isEmpty() )
                         :( Aucun debouchés fournie pour cette categorie
                     @endif
                 </div>

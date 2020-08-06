@@ -25,6 +25,14 @@ Route::get('/debouches/{debouche}/', 'Front\DeboucheController@show')->name('deb
 Route::get('/filieres/', 'Front\FiliereController@index')->name('filiere.index');
 Route::get('/filieres/{id}', 'Front\FiliereController@show')->name('filiere.show');
 
+//front - ecole
+Route::get('/ecoles/', 'Front\EcoleController@index')->name('ecole.index');
+Route::get('/ecoles/{id}', 'Front\EcoleController@show')->name('ecole.show');
+
+//front - blog
+Route::get('/actualites/', 'Front\BlogController@index')->name('blog.index');
+Route::get('/actualites/{id}', 'Front\BlogController@show')->name('blog.show');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

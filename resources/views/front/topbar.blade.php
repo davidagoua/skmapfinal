@@ -47,7 +47,7 @@
                                     <ul class="dropdown">
                                         <li><a href="{{ route('debouche.index') }}">Débouchés</a></li>
                                         <li><a href="{{ route('filiere.index') }}">Filières</a></li>
-                                        <li><a href="course.html">Ecoles</a></li>
+                                        <li><a href="{{ route('ecole.index') }}">Ecoles</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Categories</a>
@@ -64,7 +64,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="about-us.html">Blog</a></li>
+                                <li><a href="{{ route('blog.index') }}">Actualités</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
