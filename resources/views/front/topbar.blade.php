@@ -11,7 +11,7 @@
                             <a href="index.html"><img src="{{ asset('img/mobile-logo.png') }}" height="100" alt=""></a>
                         </div>
                         <div class="login-content">
-                            <a href="#">Inscription</a> / <a href="#">Connexion</a>
+                            <a href="{{ route('login') }}">Connexion</a> / <a href="#">Inscription</a>
                         </div>
                     </div>
                 </div>

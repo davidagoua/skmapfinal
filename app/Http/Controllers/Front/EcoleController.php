@@ -29,4 +29,13 @@ class EcoleController extends Controller
             'ecole'=>$ecole
         ]);
     }
+
+    public function itineraie(int $id)
+    {
+        $ecole = Ecole::find($id)->first();
+
+        return view('ecole.itineraie', [
+            'ecole'=>$ecole
+        ]);
+    }
 }

@@ -13,6 +13,12 @@
         <!-- Core Stylesheet -->
         <link rel="stylesheet" href="{{ asset('style.css') }}">
 
+        <style>
+            body{
+                font-family: Bahnschrift;
+            }
+        </style>
+
         @yield('css')
 
     </head>

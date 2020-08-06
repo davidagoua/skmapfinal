@@ -37,11 +37,7 @@
 
             @each('front.debouche.item', $debouches, 'deb')
         </div>
-        <div class="d-flex wow slideInLeft justify-items-center">
-            <div class="flex-shrink-1">
-                {{ $debouches->links() }}
-            </div>
-        </div>
+       @include('front.pagination', ['items'=>$debouches])
     </div>
 </div>
 <!-- ##### Top Popular Courses Area End ##### -->

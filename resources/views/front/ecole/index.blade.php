@@ -5,7 +5,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url({{asset('img/bg-img/breadcumb.jpg')}});">
         <div class="bradcumbContent">
-            <h2>Filières</h2>
+            <h2>Etablissement</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -17,11 +17,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <span>Rechercher une filiere</span>
+                        <span>Rechercher un etablissement</span>
                         <div>
                             <form action="" method="get">
                                 <div class="input-group mb-3">
-                                    <input type="text" name="q" class="form-control" placeholder="ida, rhcom, sigl..." >
+                                    <input value="{{old('q')}}" type="text" name="q" class="form-control" placeholder="ITA, INPHB, IUA..." >
                                     <div class="input-group-append">
                                         <button class="btn academy-btn" type="submit" id="button-addon2">
                                             Rechercher
@@ -34,18 +34,13 @@
                 </div>
             </div>
             <div class="row">
-                @if($filieres->count() < 1)
-                    <div class="text-center">
-                        :( Aucun résultat trouvé
-                    </div>
-                @else
-                    @each('front.filiere.item', $filieres, 'filiere')
-                @endif
-                <div class="mt-2">
-                    @include('front.pagination', ['items'=>$filieres])
-                </div>
 
+                @each('front.ecole.item', $ecoles, 'ecole')
             </div>
+            <div class="mt-3">
+                @include('front.pagination', ['items'=>$ecoles])
+            </div>
+
         </div>
     </div>
     <!-- ##### Top Popular Courses Area End ##### -->
