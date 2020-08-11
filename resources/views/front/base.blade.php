@@ -17,6 +17,24 @@
             body{
                 font-family: Bahnschrift;
             }
+
+            .cinput{
+                background-color: #e4ecf5;
+                border: 0px;
+                font-size: 15px;
+                font-style: italic;
+                font-family: Candara;
+            }
+            .cinput:focus{
+                background-color: #e4ecf5;
+            }
+            .filiere-item{
+                 transition: 1s background-color;
+            }
+            .filiere-item:hover{
+                color: white;
+                background-color: #fbba06;
+            }
         </style>
 
         @yield('css')

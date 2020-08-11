@@ -14,7 +14,7 @@
                         <p></p>
                         <div class="d-flex justify-content-between">
                             <a href="http://{{ $ecole->site_web }}" class="text-warning">https://{{ $ecole->site_web }}</a>
-                            <a href="{{ route('ecole.show', ['id'=>$ecole]) }}" class="btn academy-btn  btn-sm">
+                            <a href="{{ route('ecole.itineraie', ['id'=>$ecole]) }}" class="btn academy-btn  btn-sm">
                                 <span>Itineraire</span>
                             </a>
                         </div>
@@ -29,6 +29,20 @@
                     <p>
                         {{$ecole->description}}
                     </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <b>Filières proposés</b>
+                    <hr>
+                    <div class="row">
+                        @if($ecole->filieres->count() > 0)
+                                @each('front.filiere.item', $ecole->filieres , 'filiere')
+                        @else
+                            Cette ecole ne propose aucune filières
+                        @endif
+                    </div>
                 </div>
             </div>
 

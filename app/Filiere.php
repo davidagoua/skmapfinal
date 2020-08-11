@@ -18,4 +18,9 @@ class Filiere extends Model
     {
         return $this->belongsToMany(\App\Debouch::class,'debouche_filieres','filiere_id','debouche_id');
     }
+
+    public function ecoles()
+    {
+        return $this->belongsToMany(\App\Ecole::class, 'ecole_filieres');
+    }
 }

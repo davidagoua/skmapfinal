@@ -1,5 +1,5 @@
-<a  href="{{ route('filiere.show', ['id'=>$filiere]) }}" class="col-12 col-md-6 mt-3 wow fadeInUp">
-    <div class="card">
+<a  href="{{ route('filiere.show', ['id'=>$filiere]) }}" class="col-12  col-md-6 mt-3 wow fadeInUp">
+    <div class="card filiere-item">
         <div class="card-body">
             <div class="row">
                 <div class="col-3 text-center">

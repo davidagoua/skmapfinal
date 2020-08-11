@@ -20,5 +20,8 @@ class Ecole extends Model
         }
     }
 
-
+    public function filieres()
+    {
+        return $this->belongsToMany(\App\Filiere::class, 'ecole_filieres');
+    }
 }

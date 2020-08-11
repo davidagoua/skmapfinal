@@ -32,7 +32,13 @@
                     </div>
                 </div>
                 <div class="tab-pane" aria-labelledby="ets-tab" id="ets-pane">
-
+                    <div>
+                        @if($filiere->ecoles->isEmpty())
+                            Aucune ecole disponible pour cette filiere
+                        @else
+                            @each('front.ecole.item', $filiere->ecoles, 'ecole')
+                        @endif
+                    </div>
                 </div>
                 <div class="tab-pane" aria-labelledby="tems-tab" id="tems-pane">
 

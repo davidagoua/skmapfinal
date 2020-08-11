@@ -34,7 +34,7 @@ class EcoleController extends Controller
     {
         $ecole = Ecole::find($id)->first();
 
-        return view('ecole.itineraie', [
+        return view('front.ecole.itineraie', [
             'ecole'=>$ecole
         ]);
     }
