@@ -12,7 +12,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('front.home.index');
+
+        $debouches = Debouch::take(6)->get();
+        return view('front.home.index', compact('debouches'));
     }
 
     public function search(Request $request, int $id)

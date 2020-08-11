@@ -92,4 +92,17 @@
         </div>
     </div>
     <!-- ##### Top Feature Area End ##### -->
+
+
+    <div class="container mt-5 pt-3">
+        <div class="row">
+            <div class="col-12">
+                <h3>Vous sentez de l'interêt pour un débouché?</h3>
+                <hr>
+                <div class="row">
+                    @each('front.debouche.item', $debouches, 'deb')
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

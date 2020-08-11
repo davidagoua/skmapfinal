@@ -17,15 +17,31 @@
                             @csrf
                             <div class="row">
                                 <div class="form-group col-12 col-md-6">
-                                    <input type="text" required name="email" placeholder="Entrez votre email" class="form-control cinput">
+                                    <input type="text" required name="text" placeholder="Entrez votre nom d'utilisateur" class="form-control cinput">
                                     @error('email')
                                     <small class="red-text">{{ $message }}</small>
                                     @enderror
                                 </div>
 
+                                <div class="form-group col-12 col-md-6">
+                                    <input type="text" required name="email" placeholder="Entrez votre email" class="form-control cinput">
+                                    @error('email')
+                                    <small class="red-text">{{ $message }}</small>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="row">
                                 <div class="form-group  col-12 col-md-6">
                                     <input type="password" required name="password" placeholder="Entrez votre mot de passe" class="form-control cinput">
                                     @error('password')
+                                    <small class="red-text">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group  col-12 col-md-6">
+                                    <input type="password" required name="confirm_password" placeholder="Confirmer votre mot de passe" class="form-control cinput">
+                                    @error('confirm_password')
                                     <small class="red-text">{{ $message }}</small>
                                     @enderror
                                 </div>

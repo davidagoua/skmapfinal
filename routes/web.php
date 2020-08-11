@@ -33,7 +33,9 @@ Route::get('/filieres/{id}', 'Front\FiliereController@show')->name('filiere.show
 //front - ecole
 Route::get('/ecoles/', 'Front\EcoleController@index')->name('ecole.index');
 Route::get('/ecoles/{id}', 'Front\EcoleController@show')->name('ecole.show');
-Route::get('/ecoles/{id}/itineraie', 'Front\EcoleController@itineraie')->name('ecole.itineraie');
+Route::get('/ecoles/{id}/itineraie', 'Front\EcoleController@itineraie')
+    ->middleware(['auth'])
+    ->name('ecole.itineraie');
 
 
 
